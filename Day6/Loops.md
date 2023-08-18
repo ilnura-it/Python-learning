@@ -21,4 +21,15 @@
 
    while loop continuu to execute while a certain condition is truthy, and will end when they become falsy. Require more careful setup.
 
-   *** Be careful! If condition doesn't become false at some point, your loop will continue forever! ***
+   ***Be careful! If condition doesn't become false at some point, your loop will continue forever!***
+
+   ### Controlled exit
+
+   The keyword *break* gives us the ability to exit out of while loops whenever we want
+      
+      while True:
+      command = input("Type 'exit' to exit: ")
+      if (command == "exit"):
+         break
+
+
