@@ -1,6 +1,6 @@
-## Looops
+# Looops
 
-   ### for loops
+   ## for loops
       for item in iterable_object:
           # do something with item
 
@@ -14,4 +14,11 @@
       range(1, 10, 2) - will give integers from 1 to 10 with step 2 # 1, 3, 5, 7, 9
       range(7, 0, -1) - will give integers from from 7 to 1 (will exclude 0)
    
-   ### while loops
+   ## while loops
+
+      while im_tired:
+         do something
+
+   while loop continuu to execute while a certain condition is truthy, and will end when they become falsy. Require more careful setup.
+
+   *** Be careful! If condition doesn't become false at some point, your loop will continue forever! ***
