@@ -3,7 +3,7 @@ import random
 random_number = random.randint(1, 10)
 print(random_number)
 
-user_number = int(input("Enter your guess:  "))
+user_number = int(input("Enter your number from 1 to 10:  "))
 
 while user_number != random_number:
    if user_number < random_number:
