@@ -2,14 +2,17 @@ from random import randint
 
 player_wins = 0
 computer_wins = 0
+winning_score = 3
 
-while computer_wins < 2 and computer_wins < 2:
+while computer_wins < winning_score and computer_wins < winning_score:
    print(f"Player score is: {player_wins}  Computer score is: {computer_wins}")
    print("Rock...")
    print("Scissors...")
    print("Paper...\n")
    
    player1 = input("Make your move:  ").lower()
+   if player1 == "quit" or player1 == "q":
+      break
    
    rand_num = randint(0,2)
    if rand_num == 0:
@@ -47,7 +50,9 @@ while computer_wins < 2 and computer_wins < 2:
    else:
        print("Something went wrong!")
 
-if player_wins > computer_wins:
-   print("Congratulations to Player!\n")
-elif (computer_wins < player_wins):
-   print("Congratulations to computer!\n")
+if player_wins > 2:
+   print(f"Congratulations to Player. You won with score: {player_wins}!\n")
+elif computer_wins == player_wins:
+   print("It's a tie!")
+else:
+   print(f"The Computer won with score: {computer_wins}!\n")
