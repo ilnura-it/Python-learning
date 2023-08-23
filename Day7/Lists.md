@@ -72,6 +72,8 @@
 
 ### List Methods
 
+#### Adding to a LIST
+
 - append - takes one argument and add to the end of the list
 
             data = [1, 2, 3, 4]
@@ -100,3 +102,34 @@
             data.insert(len(data), "Last")
             # [1, 2, "Hi!", 3, "end!", 4, "Last"]
 
+#### Removing from a LIST
+
+- clear - clear all items
+
+            data = [1, 2, 3, 4]
+            data.clear()
+            # []
+
+- pop - remove an item at the given position, without index removes&returns last item
+
+             data = [1, 2, 3, 4]
+             data.pop()
+             4
+             print(data) # [1, 2, 3]
+
+             last_item = data.pop()
+             print(last_item) # 3
+
+             data = [1, 2, 3, 4]
+             data.pop(1)
+             2
+             print(data) # [1, 3, 4]
+
+- remove - remove the first item from the list whose value is x
+
+            data = [1, 2, 3, 4, 4, 4]
+            data.remove(2)
+            print(data) # [1, 3, 4, 4, 4]
+
+            data.remove(4)
+            print(data) # [1, 3, 4, 4] - will remove only one 4 (when you are unsure wheather the item in the list or not)
