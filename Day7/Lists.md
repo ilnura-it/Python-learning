@@ -69,3 +69,34 @@
          # 2
          # 3
          # 4
+
+### List Methods
+
+- append - takes one argument and add to the end of the list
+
+            data = [1, 2, 3, 4]
+            data.append(5)
+            # [1, 2, 3, 4, 5]
+
+            data.append(6, 7, 8) # DOES NOT WORK!
+            
+            data.append([6, 7, 8]) 
+            #[1, 2, 3, 4, 5, [6, 7, 8]]
+
+- extend - to add more than one item to the end of the list
+
+            data.extend([6, 7, 8])
+            # #[1, 2, 3, 4, 5, 6, 7, 8]
+
+- insert - insert an item at a given position
+
+            data = [1, 2, 3, 4]
+            data.insert(2, "Hi!")
+            # [1, 2, "Hi!", 3, 4]
+
+            data.insert(-1, "end!")
+            # [1, 2, "Hi!", 3, "end!", 4]
+
+            data.insert(len(data), "Last")
+            # [1, 2, "Hi!", 3, "end!", 4, "Last"]
+
