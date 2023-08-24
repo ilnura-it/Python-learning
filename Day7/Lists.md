@@ -168,3 +168,51 @@
 
             name = ['Mr', 'Steele']
             '. '.join(name) # 'Mr. Steele'
+
+### Slicing
+
+Make new lists using slices of the old list!
+
+            some_list[start:end:step]
+
+- *start* Parameter
+
+            data = [1, 2, 3, 4]
+            data[1:] # [2, 3, 4]
+            data[3:] # [4]
+
+   we can use negative number to slice from the end
+
+            data = [1, 2, 3, 4]
+            data[-1:] # [4]
+            data[-3] # [2, 3, 4]
+
+- *end* Parameter (exclusive)
+
+            data = [1, 2, 3, 4]
+            data[:2] # [1, 2]
+            data[:4] # [1, 2, 3, 4] as index 4 doesn'e exist
+            data[1:3] # [2, 3]
+            data[0:3] == data[:3]
+
+- *step* Parameter
+
+            data = [1, 2, 3, 4, 5, 6]
+            data[1::2] # [2, 4, 6]
+            data[::2] #[1, 3, 5]
+
+    with negative numbers, reverse the order
+
+##### Slice with Strings
+
+            string = "this is fun"
+            string[::-1] #"nuf si siht" - reverse the string
+
+##### Modifying portions of lists
+
+            numbers = [1, 2, 3, 4, 5]
+            numbers[1:3] = ['a', 'b', 'c']
+
+            print(numbers) # [1, 'a', 'b', 'c', 4, 5]
+
+            
