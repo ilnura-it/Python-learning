@@ -215,4 +215,8 @@ Make new lists using slices of the old list!
 
             print(numbers) # [1, 'a', 'b', 'c', 4, 5]
 
-            
+### Swapping Values
+
+            names = ["James", "Anna"]
+            names[0], names[1] = names[1], names[0]
+            print(names) # ["Anna", "James"]
