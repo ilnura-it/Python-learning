@@ -47,3 +47,8 @@ number = [1, 2, 3, 4, 5]
 string_list = [str(num) for num in numbers]
 
 print(string_list)
+
+###################
+answer = [num for num in [1,2,3,4] if num in [3,4,5,6]] # [3, 4]
+
+answer2 = [char[::-1].lower() for char in ["Elie", "Tim", "Matt"]] # ['eile', 'mit', 'ttam']

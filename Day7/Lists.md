@@ -208,7 +208,7 @@ Make new lists using slices of the old list!
             string = "this is fun"
             string[::-1] #"nuf si siht" - reverse the string
 
-##### Modifying portions of lists
+### Modifying portions of lists
 
             numbers = [1, 2, 3, 4, 5]
             numbers[1:3] = ['a', 'b', 'c']
@@ -220,3 +220,13 @@ Make new lists using slices of the old list!
             names = ["James", "Anna"]
             names[0], names[1] = names[1], names[0]
             print(names) # ["Anna", "James"]
+
+### Nested Lists
+
+            nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+            nested_list[0][1] # 2
+            nested_list[-1][0] # 7
+
+            for l in nested_list:
+                  for val in l:
+                        print(val)
