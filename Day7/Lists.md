@@ -74,7 +74,7 @@
 
 #### Adding to a LIST
 
-- append - takes one argument and add to the end of the list
+- *append* - takes one argument and add to the end of the list
 
             data = [1, 2, 3, 4]
             data.append(5)
@@ -85,12 +85,12 @@
             data.append([6, 7, 8]) 
             #[1, 2, 3, 4, 5, [6, 7, 8]]
 
-- extend - to add more than one item to the end of the list
+- *extend* - to add more than one item to the end of the list
 
             data.extend([6, 7, 8])
             # #[1, 2, 3, 4, 5, 6, 7, 8]
 
-- insert - insert an item at a given position
+- *insert* - insert an item at a given position
 
             data = [1, 2, 3, 4]
             data.insert(2, "Hi!")
@@ -104,13 +104,13 @@
 
 #### Removing from a LIST
 
-- clear - clear all items
+- *clear* - clear all items
 
             data = [1, 2, 3, 4]
             data.clear()
             # []
 
-- pop - remove an item at the given position, without index removes&returns last item
+- *pop* - remove an item at the given position, without index removes&returns last item
 
              data = [1, 2, 3, 4]
              data.pop()
@@ -125,7 +125,7 @@
              2
              print(data) # [1, 3, 4]
 
-- remove - remove the first item from the list whose value is x
+- *remove* - remove the first item from the list whose value is x
 
             data = [1, 2, 3, 4, 4, 4]
             data.remove(2)
@@ -134,7 +134,7 @@
             data.remove(4)
             print(data) # [1, 3, 4, 4] - will remove only one 4 (when you are unsure wheather the item in the list or not)
 
-- index - find an index of the specified item
+- *index* - find an index of the specified item
 
             data = [5, 5, 6, 7, 5, 8, 8, 9, 10]
             data.index(6) # 2
@@ -142,26 +142,26 @@
             data.index(5) # 0 - gives index of first item 
             data.index(5, 2) # 4  - we give an item and idex to start. So, it misses first two 5s
 
-- count - returns the number of times an element is in the list
+- *count* - returns the number of times an element is in the list
 
             data = [5, 5, 6, 7, 5, 8, 8, 9, 10]
             data.count(6) # 1
             data.count(5) # 3
             data.count(20) # 0
 
-- reverse - reverse the elements of the list(in-place)
+- *reverse* - reverse the elements of the list(in-place)
 
             data = [1, 2, 3, 4]
             data.reverse()
             print(data) # [4, 3, 2, 1]
 
-- sort - sort the items of the list
+- *sort* - sort the items of the list
 
             data = [6, 2, 3, 5, 1, 4]
             data.sort()
             print(data) # [1, 2, 3, 4, 5, 6]
 
-- join - it's a string method but it's used to convert list to string
+- *join* - it's a string method but it's used to convert list to string
 
             words = ["Coding", "Is", "fun"]
             ' '.join(words) # "Coding Is fun"
