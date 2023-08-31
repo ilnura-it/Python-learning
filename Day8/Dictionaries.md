@@ -99,3 +99,25 @@ Accessing All Values in a Dictionary, use ***.values()***
             second # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
             second.update({}) # won't remove
             second # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+
+## Dictionary Comprehension
+
+- iterates over keys by default
+- to iterate over keys and values using *.items()*
+
+      numbers = dict(first=1, second=2, third=3)
+      squared_numbers = {key: value ** 2 for key, value in numbers.items()}
+      print(squared_numbers) # {'first': 1, 'second': 4, 'third': 9}
+      
+      {num: num**2 for num in [1,2,3,4,5]}
+      num # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+      str1 = 'ABC'
+      str2 = '123'
+      combo = {str1[i]: str2[i] for i in range(0, len(str1))}
+      combo # {'A': '1', 'B': '2', 'C': '3'}
+
+      num_list = [1, 2, 3, 4]
+
+      { num:("even" if num % 2 == 0 else "odd") for num in num_list}
+      # {1: 'odd', 2: 'even', 3: 'odd', 4: 'even'}
