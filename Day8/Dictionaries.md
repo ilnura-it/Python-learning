@@ -72,3 +72,30 @@ Accessing All Values in a Dictionary, use ***.values()***
          d['no_key'] #KeyError
 
          instructor.get('name') # "Instructor"
+
+ - ***pop*** - takes a single argument corresponding to a key and removes that key-value pair from the dictionary. Returns the value corresponding to the key that was removed.
+
+           d = dict(a=1,b=2,c=3) 
+           d.pop() # TypeError
+           d.pop('a') # 1
+           d # {'b':2, 'c':3}
+
+ - ***popitem*** - removes a random key in a dictionary
+
+           d = dict(a=1,b=2,c=3,d=4,e=5) 
+           d.popitem() # ('d', 4)
+
+ - ***update*** - update keys and values in a dictionary with another set of key value pairs
+
+            first = dict(a=1,b=2,c=3,d=4,e=5)
+            second = {}
+
+            second.update(first)
+            second # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+
+            second['a'] = 'AMAZING'
+            second # {'a': 'AMAZING', 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+            second.update(first)
+            second # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+            second.update({}) # won't remove
+            second # {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
