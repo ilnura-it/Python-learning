@@ -13,6 +13,7 @@ with_vowels = "This is so much fun!"
 
 list_one = ["Elie", "Tim", "Matt"]
 answer = [char[0] for char in list_one]
+print(answer)
 
 answer_2 =  [num for num in range(1, 101) if num % 12 == 0]
 
