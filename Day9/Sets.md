@@ -73,3 +73,13 @@
    - symmetric_difference
    - union (|)
 
+### Set Comprehension
+
+Set comprehension is useful when converting other data types to a set
+
+      {x**2 for x in range(10)}
+      # {0, 1, 64, 4, 36, 9, 16, 49, 81, 25}
+      {x:x**2 for x in range(10)} # we will get dictionary
+
+      {char.upper() for char in 'hello'}
+      # {'E', 'H', 'O', 'L'} as it's a set duplication is not allowed
