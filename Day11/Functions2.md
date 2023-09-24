@@ -1,5 +1,7 @@
 # Functions
 
+### *args
+
 - ****args*** - a special operator we can pass to functions. Gather remaining arguments as a tuple. This is just a parameter - you can call it whatever you want.
 
       def sum_all_nums(num1, num2, num3):
@@ -39,3 +41,10 @@
       print(sum_all_nums(4,6)) 
       # 4
       # 6
+
+### **kwargs
+
+- *****kwargs*** - a special operator we can pass to functions
+- Gathers remaining keyword arguments as a dictionary
+- This is just a parameter - you can call it whatever you want!
+
