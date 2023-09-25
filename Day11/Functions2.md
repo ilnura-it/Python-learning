@@ -77,3 +77,15 @@ We can use * as an argument to a function to "unpack" values
     # Error
     sum_all_values(*nums) # (1, 2, 3, 4, 5, 6)
     # 21
+
+## Using ** as an Argument: Dictionary Unpacking
+
+    def display_names(first, second):
+        print(f"{first} says hello to {second}")
+
+    names = {"first": "Colt", "second": "Rusty"}
+
+    display_names(first="Charlie", second="Sue") # Charlie says hello to Sue
+
+    display_names(names) # Error
+    display_names(**names) # Colt says hello to Rusty
