@@ -9,7 +9,7 @@ In JavaScript it called Anonymous Functions - single line function
       print(square2(7)) # 49
 
       add = lambda a,b: a + b
-      parint(add(3,10)) # 13
+      print(add(3,10)) # 13
 
       print(square2.__name__) # lambda
 
@@ -41,4 +41,17 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
       first_names = list(map(lambda x: x['first'], names))
       print(first_names) # ["John", "Anna", "Juhn"]
  
- 
+# Filter
+
+- There is a lambda for each value in the iterable
+- Returns filter object which can be converted into other iterables
+- The object contains only the values that return true to the lambda
+
+            l = [1, 2, 3, 4]
+            evens = list(filter(lambda x: x % 2 == 0, l))
+            evens # [2, 4]
+
+            names = ['austine', 'penny', 'anthony', 'angel', 'billy']
+            a_names = list(filter(lambda n: n[0] == 'a', names))
+            a_names # ['austine', 'anthony', 'angel']
+
