@@ -55,3 +55,25 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
             a_names = list(filter(lambda n: n[0] == 'a', names))
             a_names # ['austine', 'anthony', 'angel']
 
+# All
+
+- Return True if all elements of the iterable are truthy (or if the iterable is empty)
+
+            [char for char in 'eio' if char in 'aeiou']
+            # ['e', 'i', 'o']
+
+            all([char for char in 'eio' if char in 'aeiou'])
+            # True
+
+            nums = [2, 4, 8, 20, 21]
+            all([num % 2 == 0 for num in nums])
+            # False
+
+# Any
+
+- Return True if any element of the iterable is truthy. If the iterable is empty, return False
+
+            any([0, 1, 2, 3]) # True even if 0 is falsy
+
+            any([val for val in [1, 2, 3] if val > 2]) # True
+            any([val for val in [1, 2, 3] if val > 5]) # False
