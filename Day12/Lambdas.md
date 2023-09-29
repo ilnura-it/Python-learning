@@ -77,3 +77,57 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
 
             any([val for val in [1, 2, 3] if val > 2]) # True
             any([val for val in [1, 2, 3] if val > 5]) # False
+
+# Generator Object (Generator Expression)
+
+- Use a generator expression if all you're doing is iterating once. If you want to store and use the generated results, then you're probably better off with a list comprehension. (Passing to a function)
+
+       people = ["Catherine", "Clott", "John", "Chris"]
+
+       (name[0] == "C" for name in people)
+       # <generator object <genexpr> at 0x10168f048></genexpr>>
+
+# Sorted
+ - Returns a new sorted list from the items in iterable (works on everything that iterable)
+
+            numbers = [6, 1, 8, 2]
+            sorted(numbers) # [1, 2, 6, 8]
+            print(numbers) # [6, 1, 8, 2]
+            numbers.sort()
+            print(numbers) # [1, 2, 6, 8]
+
+            sorted(numbers, reverse=True) # [8, 6, 2, 1]
+
+- Can accept tuples unlike sort()
+
+- Use with lambda
+
+            songs = [
+                  {"title": "happy birthday", "playcount": 1},
+                  {"title": "Survive", "playcount": 54},
+                  {"title": "Toxic", "playcount": 99},
+                  {"title": "Desert Rose", "playcount": 31}
+            ]
+            sorted(songs, key=lambda s: s["playcount"], reverse=True) # [{'title': 'Toxic', 'playcount': 99}, {'title': 'Survive', 'playcount': 54}, {'title': 'Desert Rose', 'playcount': 31}, {'title': 'happy birthday', 'playcount': 1}]
+
+# Max and min
+
+- ***max*** - return the largest item in an iterable or the largest of two or more arguments
+
+            max(3, 65, 98) 
+            # 98
+            min(3, 65, 98)
+            # 3
+            max('hello world')
+            # 'w'
+            min('hello world')
+            # ' '
+
+            songs = [
+                  {"title": "happy birthday", "playcount": 1},
+                  {"title": "Survive", "playcount": 54},
+                  {"title": "Toxic", "playcount": 99},
+                  {"title": "Desert Rose", "playcount": 31}
+            ]
+            min(songs, key=lambda s: s['playcount'])
+            # {'title': 'happy birthday', 'playcount': 1}
