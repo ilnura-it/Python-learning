@@ -160,3 +160,56 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
             'hello'.__len__() # behind the sceens
 
 - In OOP we can define the type of what we want
+
+# abs
+
+- Returns the absolute value of a number. The argument may be an integer or a floating point number
+
+            abs(-5) # 5
+            abs(5) # 5
+            abs(-3.4444) # 3.4444
+            abs(3.4444) # 3.4444
+
+# sum
+
+- Takes an iterable and optional start.
+- Returns the sum of start and the items of an iterable from left to right and returns the total
+- start default is 0
+
+            sum([1, 2, 3]) # 6
+            sum([1, 2, 3], 10) # 16
+            sum([1, 2, 3], -6) # 0
+            sum((1.5, 2, 3.7)) # 7.2
+            sum({1, 50, 100}) # 151
+
+            sum(['hi', 'there']) # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+            
+            sum(['hi', 'there'], '') # TypeError: sum() can't sum strings [use ''.join(seq) instead]
+
+# round  
+
+- Return number rounded to ndigits precision after the decimal point. If ndigits is omitted or is None, it returns the nearest integer to its input.
+
+            round(10.2) #10
+            round(1.212121, 2) #1.21
+            round(3.51234) # 4
+            round(3.51234, 3) # 3.512
+
+# zip
+
+- Make an iterator that aggregates elements from each of the iterables.
+- Returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables.
+- The iterator stops when the shortest input iterable is exhausted.
+
+            first_zip = zip([1,2,3], [4,5,6])
+            list(first_zip) # [(1, 4), (2, 5), (3, 6)]
+            dict(first_zip) # {1: 4, 2: 5, 3: 6}
+
+- zip with * for unpacking
+
+            five_by_two = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
+            list(zip(*five_by_two))
+            # [(0, 1, 2, 3, 4), (1, 2, 3, 4, 5)]
+
+
+
