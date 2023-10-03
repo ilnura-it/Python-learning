@@ -131,3 +131,32 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
             ]
             min(songs, key=lambda s: s['playcount'])
             # {'title': 'happy birthday', 'playcount': 1}
+
+# reversed
+
+- return a reverse iterator
+
+            nums = [1, 2, 3, 4]
+            nums.reverse()
+            nums # [4, 3, 2, 1]
+
+            reversed(nums)
+            # <list_reverseiterator object at 0X102e83eb8>
+            list(reversed(nums))
+            # [4, 3, 2, 1]
+
+            for char in reversed("hello"):
+                  print char
+            
+            # o
+            # l
+            # l
+            # e
+            # h
+            #"hello"[::-1] # 'olleh'
+
+# len
+
+            'hello'.__len__() # behind the sceens
+
+- In OOP we can define the type of what we want
