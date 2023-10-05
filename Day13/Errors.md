@@ -21,3 +21,14 @@ In Python, it is strongly encouraged to use ***try/except*** blocks, to catch ex
          foobar
       except NameError as err:
          print(err) 
+
+## Debugging with pdb
+
+pdb - python debugger, module
+
+      import pdb, pdb.set_trace()
+### Common pdb commands
+l = list
+n = next line
+p = print
+c = continue, finish debugging
