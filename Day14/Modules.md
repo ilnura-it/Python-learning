@@ -28,3 +28,29 @@
 
       magic(1, 100)
       pick(['apple', 'orange', 'banana', 'pear'])
+
+## Custom Modules
+
+- You can **import** from your own code too
+- The syntax is the same as before
+- import from the name of the Python file
+- Can be used when code will be used in more than one place
+- For organising long files 
+
+***file1***
+
+      def fn():
+         return "Hello"
+
+      def other_fn():
+         return "Bye"
+
+***file2***
+
+      import file1
+
+      file1.fn() # Hello
+      file1.other_fn() # Bye
+
+- With **(import random)**, you need to specify random. before the function name.
+- With **(from random import * )**, you can use functions directly without the random. prefix.
