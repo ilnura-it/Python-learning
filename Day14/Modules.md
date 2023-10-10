@@ -54,3 +54,11 @@
 
 - With **(import random)**, you need to specify random. before the function name.
 - With **(from random import * )**, you can use functions directly without the random. prefix.
+
+## External Modules
+
+- Built-in modules come with Python
+- External modules are dowmloaded from the internet
+- You can download external modules using **pip**
+
+      python3 -m pip install NAME_OF_PACKAGE
