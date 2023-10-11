@@ -62,3 +62,11 @@
 - You can download external modules using **pip**
 
       python3 -m pip install NAME_OF_PACKAGE
+
+      python3 -m pip install autopep8 # To clean Up the code
+      autopep8 --in-place exercise.py
+      autopep8 --in-place -a -a exercise.py # double aggressive
+
+      python3 -m pip install pyfiglet
+      import pyfiglet
+      help(pyfiglet)
