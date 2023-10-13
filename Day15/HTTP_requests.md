@@ -11,3 +11,24 @@ Using the requests Module
       response.headers
 
       response.text # will give while html
+
+## Query String
+
+- Option1
+            import requests
+
+            response = requests.get(
+                  "http://www.example.com?key1=value1&key2=value2
+            )
+
+- Option2
+
+            import requests
+
+            response = requests.get(
+                  "http://www.example.com",
+                  params={
+                        "key1" : "value1",
+                        "key2" : "value2"
+                  }
+            )
