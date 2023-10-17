@@ -27,3 +27,23 @@ class Vehicle:
       self.year = year
 
 - The **self** keyword refers to the current class instance. **self** must always be the first parameter to **__init__** and any methods and properties on class instances.
+
+## Undescores
+
+      class Person:
+         def __init__(self):
+         self.name = "Tony"
+         self._secret = "hi"
+         self.__msg = "I like coffee" 
+         
+         
+         print(p.__msg) # AttributeError: "Person' object has no attribute '__msg'
+         print(p._Person__msg) # I like coffee
+
+
+      _secret - private variable that not supposed to be accessed from outside of class
+
+      __msg
+
+      __name__ - used for Python specific methods
+
