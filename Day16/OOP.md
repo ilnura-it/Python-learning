@@ -47,3 +47,7 @@ class Vehicle:
 
       __name__ - used for Python specific methods
 
+## Class Attribute
+
+- We can define attributes directly on a class that are shared by all instances of a class and the class itself.
+
