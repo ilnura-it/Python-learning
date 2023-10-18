@@ -51,3 +51,17 @@ class Vehicle:
 
 - We can define attributes directly on a class that are shared by all instances of a class and the class itself.
 
+## Class Methods
+
+- Class methods are methods (with the @classmethod decorator) that are not concerned with instances, but the class itself
+
+## String Representation
+
+- The **__repr__** method is one of the several ways to provide a nicer string representation:
+
+      class Human:
+         def __init__(self, name="somebody"):
+            self.name = name
+
+         def __repr__(self):
+            return self.name
