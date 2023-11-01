@@ -22,3 +22,11 @@
          gandalf.make_sound("meow") # meow
          gandalf.cool # True
 
+### Mltiple inheritance
+
+**Method Resolution Order(MRO)** - whenever you create a class, Python sets a Method Resolution Order, or MRO, for hat class, which is the order in which Python will look for methods on instances of that class.
+
+You can programmatically reference the MRO three ways:
+- **_mro_** attribute on the class
+- use the **mro()** method on the class
+- use the builtin help(cls) method
