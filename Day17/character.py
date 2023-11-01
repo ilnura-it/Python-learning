@@ -10,4 +10,10 @@ class NPC(Character):
         
         
     def speak(self):
-        return f"{self.name} said: {self.speak}"
+        return f"{self.name} said: I got it"
+
+villager = NPC("Bob", 100, 12)
+print(villager.name)  # Bob
+print(villager.hp)  # 100
+print(villager.level)  # 12
+print(villager.speak())
