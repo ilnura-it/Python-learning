@@ -30,3 +30,32 @@ You can programmatically reference the MRO three ways:
 - **_mro_** attribute on the class
 - use the **mro()** method on the class
 - use the builtin help(cls) method
+
+## Polymorphism
+
+A key principle in OOP is the idea of polymorphism - an object can take on many (poly) forms (morph).
+
+While a formal definition of polymorphism is more difficult, here are two important practical applications:
+
+1. The same class method works in a similar way for different classes
+
+         Cat.speak() # meow
+         Dog.speak() # woof
+         Human.speak() #yeah
+
+2. The same operation works for different kinds of objects
+
+         sample_list = [1, 2, 3]
+         sample_tuple = (1, 2, 3)
+         sample_string = "awesome"
+
+         len(simple_list)
+         len(simple_tuple)
+         len(simple_string)
+
+## Special __magic__ methods
+
+      8 + 2 # 10
+      "8" + "2" # 82
+
+   The **+** operator is shorthand for a special method called **__add__()** that gets called on the first operand
