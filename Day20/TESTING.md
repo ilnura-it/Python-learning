@@ -54,3 +54,18 @@
  - Clutters up our function code
  - Lack many features of larger testing tools
  - Tests can be brittle
+
+ ## Unittest
+
+ ### Unit testing:
+
+ - Test smallest parts of an application in isolation (e.g. units)
+ - Good candidates for unit testing: individual classes, modules, or functions
+ - Bad candidates for unit testing: an entire application, dependencies across several classes or modules
+
+ ### unittest
+
+ - Python comes with a built-in module called unittest
+ - You can write unit tests encapsulaed as classes that inherit from unittest .TestCase
+ - This inheritance gives you access to many assertion helpers that let you test the behavior of your functions
+ - You can run tests by calling unittest.main()
