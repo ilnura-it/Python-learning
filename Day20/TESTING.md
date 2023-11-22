@@ -69,3 +69,10 @@
  - You can write unit tests encapsulaed as classes that inherit from unittest .TestCase
  - This inheritance gives you access to many assertion helpers that let you test the behavior of your functions
  - You can run tests by calling unittest.main()
+
+ ## setUp and TearDown
+
+ - For larger applications, you may want similar application state before running tests
+ - setUp runs before each test method
+ - tearDown runs after each test method
+ - Commom use cases: adding/removing data from a test database, creating instances of a class
