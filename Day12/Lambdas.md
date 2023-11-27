@@ -40,7 +40,7 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
 
       first_names = list(map(lambda x: x['first'], names))
       print(first_names) # ["John", "Anna", "Juhn"]
- 
+
 # Filter
 
 - There is a lambda for each value in the iterable
@@ -88,15 +88,16 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
        # <generator object <genexpr> at 0x10168f048></genexpr>>
 
 # Sorted
- - Returns a new sorted list from the items in iterable (works on everything that iterable)
 
-            numbers = [6, 1, 8, 2]
-            sorted(numbers) # [1, 2, 6, 8]
-            print(numbers) # [6, 1, 8, 2]
-            numbers.sort()
-            print(numbers) # [1, 2, 6, 8]
+- Returns a new sorted list from the items in iterable (works on everything that iterable)
 
-            sorted(numbers, reverse=True) # [8, 6, 2, 1]
+           numbers = [6, 1, 8, 2]
+           sorted(numbers) # [1, 2, 6, 8]
+           print(numbers) # [6, 1, 8, 2]
+           numbers.sort()
+           print(numbers) # [1, 2, 6, 8]
+
+           sorted(numbers, reverse=True) # [8, 6, 2, 1]
 
 - Can accept tuples unlike sort()
 
@@ -112,9 +113,9 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
 
 # Max and min
 
-- ***max*** - return the largest item in an iterable or the largest of two or more arguments
+- **_max_** - return the largest item in an iterable or the largest of two or more arguments
 
-            max(3, 65, 98) 
+            max(3, 65, 98)
             # 98
             min(3, 65, 98)
             # 3
@@ -134,7 +135,7 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
 
 # reversed
 
-- return a reverse iterator
+- return a e iterator
 
             nums = [1, 2, 3, 4]
             nums.reverse()
@@ -147,7 +148,7 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
 
             for char in reversed("hello"):
                   print char
-            
+
             # o
             # l
             # l
@@ -183,10 +184,10 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
             sum({1, 50, 100}) # 151
 
             sum(['hi', 'there']) # TypeError: unsupported operand type(s) for +: 'int' and 'str'
-            
+
             sum(['hi', 'there'], '') # TypeError: sum() can't sum strings [use ''.join(seq) instead]
 
-# round  
+# round
 
 - Return number rounded to ndigits precision after the decimal point. If ndigits is omitted or is None, it returns the nearest integer to its input.
 
@@ -205,11 +206,8 @@ iterable - something that can be iterated over(lists, strings, dictionaries, set
             list(first_zip) # [(1, 4), (2, 5), (3, 6)]
             dict(first_zip) # {1: 4, 2: 5, 3: 6}
 
-- zip with * for unpacking
+- zip with \* for unpacking
 
             five_by_two = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5)]
             list(zip(*five_by_two))
             # [(0, 1, 2, 3, 4), (1, 2, 3, 4, 5)]
-
-
-
