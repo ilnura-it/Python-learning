@@ -66,3 +66,30 @@
 - ***w*** - Write to a file (previous contents removed)
 - ***a*** - Append to a file
 - ***r+*** - Read and write to a file (writing based on cursor, overwrite previous content)
+
+## Reading CSV files 
+
+- Python has a built-in ***CSV module*** to read/write CSVs more easily
+- ***reader*** - lets you iterate over rows of the CSV as lists
+- ***DictReader*** - lets yo iterate over rows of the CSV as OrderedDicts
+
+### Other Delimiters
+
+Readers accept a delimiter kwarg in case your data isn't separated by commas.
+
+         from csv import reader
+         with open ("example.csv") as file:
+            csv_reader = reader(file, delimiter="|")
+            for row in csv_reader:
+            print(row)
+
+## Writing to CSV files
+
+#### Using lists
+
+- ***writer*** - creates a writer object for writing to CSV
+- ***writerow*** - method on a writer to write a row to the CSV
+- ***DictWriter*** - creates a writer object for writing using dictionaries
+- ***fieldnames*** - kwarg for the DictWriter specifying headers
+- ***writeheader*** - method on a writer to write header row
+- ***writerow*** - method on a writer to write a row based on a dictionary
