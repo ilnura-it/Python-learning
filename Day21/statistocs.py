@@ -1,11 +1,11 @@
 def statistics(file):
-   stats = {}.from.keys(["lines", "words", "characters"], 0)
+    with open(file) as file:
+        lines = file.readlines()
+ 
+    return { "lines": len(lines),
+             "words": sum(len(line.split(" ")) for line in lines),
+             "characters": sum(len(line) for line in lines) }
 
-   with open(file, 'r') as file:
-     # file.read()
+print(statistics("file.txt"))
 
-      for line in file:
-         num_lines += 1
-
-
-      text_dict = {}
+   
