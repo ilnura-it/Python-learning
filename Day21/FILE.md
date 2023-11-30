@@ -90,6 +90,6 @@ Readers accept a delimiter kwarg in case your data isn't separated by commas.
 - ***writer*** - creates a writer object for writing to CSV
 - ***writerow*** - method on a writer to write a row to the CSV
 - ***DictWriter*** - creates a writer object for writing using dictionaries
-- ***fieldnames*** - kwarg for the DictWriter specifying headers
+- ***fielenames*** - kwarg for the DictWriter specifying headers
 - ***writeheader*** - method on a writer to write header row
 - ***writerow*** - method on a writer to write a row based on a dictionary
