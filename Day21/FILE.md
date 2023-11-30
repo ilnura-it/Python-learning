@@ -93,3 +93,16 @@ Readers accept a delimiter kwarg in case your data isn't separated by commas.
 - ***fielenames*** - kwarg for the DictWriter specifying headers
 - ***writeheader*** - method on a writer to write header row
 - ***writerow*** - method on a writer to write a row based on a dictionary
+
+# Pickling
+
+         import pickle
+
+         blue = Cat("Blue", "Scottish Fold", "String")
+
+         with open("pets.pickle", "wb") as file: # write binary
+            pickle.dump(blue, file)
+
+         with open("pets.pickle", "rb") as file: # read binary
+            pickle.load(blue, file)
+
