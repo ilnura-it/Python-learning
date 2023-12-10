@@ -23,3 +23,9 @@
 - find_parent / find_parents
 - find_next_sibling / find_next_siblings
 - find_previous_sibling / find_previous_siblings
+
+## Scrapy
+
+         pip install scrapy
+
+         scrapy runspaider -o books2.csv book_scraper.py
